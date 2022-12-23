@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag redis:6.2.7-alpine && docker push docker.io/jiamiao442/redis:6.2.7-alpine
+      run: docker build . --file Dockerfile --tag jiamiao442/redis:6.2.7-alpine && docker push docker.io/jiamiao442/redis:6.2.7-alpine
 
    # - name: Push the Docker image
    #   run: docker push docker.io/jiamiao442/redis:6.2.7-alpine
